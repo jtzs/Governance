@@ -1,2 +1,2 @@
-# IT-governance
-The IT Governance Document outlines the principles, policies, and procedures for managing technology within the organisation to ensure efficient, secure, and compliant use of IT resources.
+# IT Governance
+The IT Governance Document outlines the principles, policies, and procedures for managing technology within the organisation to ensure efficient, secure, and compliant use of IT resources. This document provides guidance on roles, responsibilities, and standards for IT decision-making, risk management, and asset management, ensuring that our technology infrastructure aligns with our values and goals. By adopting this governance framework, we aim to protect our assets, mitigate risks, and optimize the value derived from our technology investments."
