@@ -86,7 +86,7 @@ The scope of this document should include the following users
 4. Passwords should following the following recommended complexity
     1. At least 10 Characters long
     2. Contain a mix of uppercase, lower case Characters, numbers and special characters
-    3. As far as possible passphrases should be used e.g. 3LongRedCars!, 5BlackCrowsOutside?, Romans12:1Therefore
+    3. As far as possible [passphrases](https://en.wikipedia.org/wiki/Passphrase) should be used e.g. 3LongRedCars!, 5BlackCrowsOutside?, Romans12:1Therefore
     4. Password complexity can be checked using online tools [CSA Password Checker](https://ihp.csa.gov.sg/password-checker) [HaveIBeenPwned](https://haveibeenpwned.com/Passwords). These should only be used as an estimate of what a secure password should be.
 5. Never enter your username and password into suspicious websites.
 6. Do not open any suspicious links, files or attachments that are sent to you, always prefer to type in the URL if you are unsure.  Example: [apple.com](https://www.xn--80ak6aa92e.com/)

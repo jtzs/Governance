@@ -17,8 +17,13 @@ The governing board should exercise appropriate due diligence with beneficiaries
 
 The governing board is responsible for the overall risk of the organisation. The governing board should manage the overall risk levels of the organisation to ensure that the residual risk is at an acceptable level for the organisation.
 
-[[Charities.gov.sg Reference](./references/links.md#governing-board-duties-and-responsibilities)]
+[[Charities.gov.sg Reference](https://www.charities.gov.sg/Pages/Charities-and-IPCs/Manage-Your-Charity/Governing-Board-Duties-and-Responsibilities.aspx#)]
 
 ## 3. Operational Council
 
+The organisational council is the operational planning body of the organisation and is responsible for the day to day operations of the organisation. The organisation council is formed by the staff, the  department heads and the assistant heads. The organisational council reports and is accountable to the governing board as such major concerns and risks should be highlighted regularly to the governing board. The operational council plays a key role in implementing the plans of the organisation in order to accomplish the organisation's strategic goals.
+
 ## 4. Departments
+
+The departments are responsible for the day to day operations of the organisation. Each department is accountable to the organisational council and reports directly to the department leadership.
+
