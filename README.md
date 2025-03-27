@@ -30,14 +30,14 @@ The IT Governance standard should provide the necessary guidance to the utilisat
 
 1. Hardware: Desktops, Laptops, Printers, Projectors, Network equipment
 2. Software: Operating systems, applications (Microsoft Office)
-3. Data: Organisational and Ministry Meeting minutes, Ministry documents, Member and Volunteer records, Forms, Memorandums and Agreements
+3. Data: Organisational and Department Meeting minutes, Department documents, Member and Volunteer records, Forms, Memorandums and Agreements
 4. Services: Google Workspace(GSuite), Software-as-a-service (SaaS) subscriptions (Spotify, Libby)
 
 ### 2.3 Users
 
 The scope of this document should include the following users
 
-1. Organisations Staff including Pastors, Administrative staff, Ministry staff, interns and part-time staff
+1. Organisations Staff including Pastors, Administrative staff, Department staff, interns and part-time staff
 2. Volunteer Leaders who hold accounts and are leaders for ministries who use IT equipment and IT services purchased or subscribed by the organisation
 3. Volunteers who use IT equipment and IT services purchased or subscribed by the organisation
 
@@ -54,7 +54,7 @@ The scope of this document should include the following users
 
 1. Hardware should be properly maintained to the best of the organisation's ability.
 2. Hardware should be stored in proper locations in accordance with manufacturers' recommendations and returned to the storage location after each use.
-3. Hardware should be inspected regularly for any signs of damage, wear and tear, or other issues that may affect its functionality. Upon discovery of such issues, they should be reported to ministry leaders.
+3. Hardware should be inspected regularly for any signs of damage, wear and tear, or other issues that may affect its functionality. Upon discovery of such issues, they should be reported to department leaders.
 4. Hardware should be disposed properly according to the manufacturer's recommendations.
 
 ## 5. Account Management
@@ -70,7 +70,7 @@ The scope of this document should include the following users
 3. When sharing organisational data, it should be directly to the person who needs it. Avoid using sharing via Public accessible links where possible.
 4. Storage of Personally identifiable information (PII) should be flagged out to the Data Protection Officer for reviewing of Organisation's [Data Protection Obligations](https://www.pdpc.gov.sg/overview-of-pdpa/the-legislation/personal-data-protection-act/data-protection-obligations). **Such data should be automatically classified as Confidential**.
 5. Once no longer required, members and volunteers should relinquish access to sensitive and PII where possible to reduce exposure
-6. Organisational data that is active being shared should be reviewed annually and updated to remove volunteers who are not longer relevant.
+6. Organisational data that is actively being shared should be reviewed annually and updated to remove volunteers who are not longer relevant.
 7. Data Classification and Security
     1. Confidential Data refers to data that should not be shared to non-members and members who are not directly involved. e.g. Organisational Financial Data, Personal Data from camp registrations.
     2. Private and Confidential Data refers to data that should not be shared with people other than those who are directly involved. e.g. HR Data
@@ -81,7 +81,7 @@ The scope of this document should include the following users
 2. Passwords should not be shared to anyone. 
 3. If absolutely necessary, you should be the one to type in the password. e.g. for IT support/Troubleshooting. After the issue has been resolved, your password should be changed immediately.
 4. Passwords should following the following recommended complexity
-    1. 10 Characters long
+    1. At least 10 Characters long
     2. Contain a mix of uppercase, lower case Characters, numbers and special characters
     3. As far as possible passphrases should be used e.g. 3LongRedCars!, 5BlackCrowsOutside?, Romans12:1Therefore
     4. Password complexity can be checked using online tools [CSA Password Checker](https://ihp.csa.gov.sg/password-checker) [HaveIBeenPwned](https://haveibeenpwned.com/Passwords). These should only be used as an estimate of what a secure password should be.
