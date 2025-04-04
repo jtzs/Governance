@@ -3,19 +3,19 @@
 The goal of this document it to capture at a very high level broad security concepts that people should be aware when considering management of IT departments and IT Infrastructure.
 
 ## Contents
-- [Introduction](#What-is-cyber-security)
-- [Data management](#Data-management)
-- [Personal Data Protection Act (PDPA)](#personal-data-protection-act)
-- [Scams, Social Engineering and Phishing](#scams-social-engineering-and-phishing)
-- [Malware](#malware)
-- [Accounts & Passwords](#accounts--passwords)
-- [Physical cyber security](#physical-cyber-security)
-- [Application security](#application-security)
-- [Server security](#server-security)
-- [Supply Chain Risk management](#supply-chain-risk-management)
-- [Email security](#email-security)
-- [Misinformation/Disinformation](#Misinformation/Disinformation)
-
+1. [Introduction](#What-is-cyber-security)
+2. [Data management](#data-management)
+3. [Risk Management](#risk-management)
+4. [Personal Data Protection Act (PDPA)](#personal-data-protection-act)
+5. [Scams, Social Engineering and Phishing](#scams-social-engineering-and-phishing)
+6. [Malware](#malware)
+7. [Accounts & Passwords](#accounts--passwords)
+8. [Physical cyber security](#physical-cyber-security)
+9. [Application security](#application-security)
+10. [Server security](#server-security)
+11. [Supply Chain Risk management](#supply-chain-risk-management)
+12. [Email security](#email-security)
+13. [Misinformation/Disinformation](#Misinformation/Disinformation)
 
 ## What is cyber security
 The goal of Cyber security is the protection of an Organisation's IT assets. There are many threats to an organisation's IT assets, and attackers often do not need a reason to cause damage to an organisation's IT assets. Even the most well prepared organisations, multi-billion companies and first-world governments have difficulties when facing advanced persistent threats that specifically target them. The goal of cyber security is to deter the majority of attackers from causing damage to IT assets, minimising impact when there is damage and reducing downtime with a fast recovery.
@@ -49,6 +49,24 @@ Backups and by extension snapshots taken should always be stored with the same o
 Data recovery is a critical part of data management. it is too late when trying to recover important data only to realise that the backups are corrupted or not properly included in the backup strategy. As such it is important to include regular data restoration exercises to ensure the viability of the backups and to ensure that key data is not missed out.
 
 The general recommended practice is to carry out data restoration exercises at least once a year.
+
+## Risk Management
+
+Risk management is the process of identifying, managing and accepting risks in an organisation.
+The risk management process typically follows the following steps
+1. Identification of risks.
+   - What are the organisation's data and activities.
+   - What are the risks associated with those activities, especially referencing the CIA Triad.
+   - Risks should be recorded in a risk register and prioritised based on their criticality, likelihood and impact.
+2. Management of risks.
+   - Risks are typically mitigated through avoidance, reduction, transference or acceptance.
+   - Risks management activities should be recorded as part of risk management and reviewed regularly (annually).
+3. Acceptance of risks.
+   - When risks cannot be cannot further mitigated, the residual risks need to be accepted.
+   - The residual risks should be escalated to the organisational leadership (typically the board) for awareness and acceptance.
+   - Residual Risk acceptance should also be carried out regularly (annually).
+
+[Reference 1](https://www.ibm.com/think/topics/risk-mitigation)
 
 ## Personal Data Protection Act
 
