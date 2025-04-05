@@ -1,4 +1,4 @@
-# IT Governance Standard
+# Organisational Structure
 
 ## Contents
 1. [Introduction](#introduction)

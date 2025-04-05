@@ -9,6 +9,8 @@
 5. [Account management](#5-account-management)
 6. [Data management](#6-data-management)
 7. [Security](#7-security)
+8. [Exceptions](#8-exceptions)
+
 
 ## 1. Introduction
 
@@ -103,7 +105,3 @@ To ensure compliance with our security standard, any deviation requests must be 
 - Any relevant documentation or evidence supporting the deviation
 
 Approved deviations will have a maximum validity period of 12 months from approval date. Renewal or extension requires resubmission to the governing board before expiration.
-
-## 9. Closing remarks
-
-A standard is only as effective as it's implementation and successful implementations can only happen in organisations with the close cooperation of the leadership, the staff and the volunteers. The goal of this document is not to penalise but to provide the organisation direction and guidance on how bring to best protect the organisation's IT assets.
