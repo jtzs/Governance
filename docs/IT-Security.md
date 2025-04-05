@@ -4,7 +4,7 @@ The goal of this document it to capture at a very high level broad security conc
 
 ## Contents
 1. [Introduction](#What-is-cyber-security)
-2. [Data management](#data-management)
+2. [Data Management](#data-management)
 3. [Risk Management](#risk-management)
 4. [Personal Data Protection Act (PDPA)](#personal-data-protection-act)
 5. [Scams, Social Engineering and Phishing](#scams-social-engineering-and-phishing)
@@ -15,7 +15,7 @@ The goal of this document it to capture at a very high level broad security conc
 10. [Server security](#server-security)
 11. [Supply Chain Risk management](#supply-chain-risk-management)
 12. [Email security](#email-security)
-13. [Misinformation/Disinformation](#Misinformation/Disinformation)
+13. [Misinformation/ Disinformation](#misinformation-disinformation)
 
 ## What is cyber security
 The goal of Cyber security is the protection of an Organisation's IT assets. There are many threats to an organisation's IT assets, and attackers often do not need a reason to cause damage to an organisation's IT assets. Even the most well prepared organisations, multi-billion companies and first-world governments have difficulties when facing advanced persistent threats that specifically target them. The goal of cyber security is to deter the majority of attackers from causing damage to IT assets, minimising impact when there is damage and reducing downtime with a fast recovery.
@@ -32,7 +32,7 @@ A free resource for learning about cyber security is [IBM Skills build](https://
 | Authorization   | The concept that information should only be revealed or actions allowed for people with sufficient or correct rights or entitlements. <br/> E.g. Only Managers should be allowed to approve leave request, Auditors should not be allowed to change information. |
 | Auditing        | THe concept that any action should be recorded and logged as evidence. <br/>  | 
 
-## Data management
+## Data Management
 
 The purpose of proper data management is to ensure organisational knowledge is protected and maintained to ensure it's availability and continuity. The main areas for consideration here are typically data storage and backup and data recovery. The data management strategy chosen should always first consider the data that is being stored as different types of data will require different management strategies.
 
@@ -185,7 +185,7 @@ In the age of digital communication, organisations are increasingly reliant on e
   - DomainKeys Identified Mail (DKIM)
   - Domain-based Message Authentication Reporting and Conformance (DMARC)
 
-## Misinformation/Disinformation
+## Misinformation/ Disinformation
 
 Misinformation and Disinformation are two terms that can refer to the same false information but the intent and purpose of the information is different. Misinformation refers to false or misleading information that is shared without malicious intent, while disinformation refers to intentionally and often maliciously distribution of false or misleading information. While misinformation can be unintentional the impact of the information can be equally damaging.
 
@@ -197,6 +197,11 @@ In addition, important aspects of the information to consider:
 - Peer reviews of the source
 - Tone of the information/content
 - Goal or intent of the information
+
+Examples include
+- Dihydrogen Monoxide
+- [British Medical Journal Parachute Research](https://www.bmj.com/content/363/bmj.k5094)
+  - Conclusion: Parachute use did not reduce death or major traumatic injury when jumping from aircraft in the first randomized evaluation of this intervention.
 
 [Misinformation vs. Disinformation Reference 1](https://www.bbc.co.uk/bitesize/articles/z3hhvj6)
 [Misinformation vs. Disinformation Reference 2](https://guides.library.pdx.edu/fakenews)
