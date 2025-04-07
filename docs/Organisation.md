@@ -38,11 +38,15 @@ The governing board is responsible for the overall risk of the organisation. The
 
 ## Operational Council
 
-The operational council is the operational planning body of the organisation and is responsible for the day to day operations of the organisation. The operational council is formed by the staff, the  department leaders and the assistant leaders. The organisational council reports and is accountable to the governing board as such major concerns and risks should be highlighted regularly to the governing board. The operational council plays a key role in implementing the plans of the organisation in order to accomplish the organisation's strategic goals.
+The operational council is the operational planning body of the organisation and is responsible for the day to day operations of the organisation. The operational council is formed by the staff and the  department leadership. The organisational council reports and is accountable to the governing board as such major concerns and risks should be highlighted regularly to the governing board. The operational council plays a key role in implementing the plans of the organisation in order to accomplish the organisation's strategic goals. Members of the operational council are responsible for reviewing and approving plans and proposals that come before the operational council.
 
 ## Departments
 
 The departments are responsible for the day to day operations of the organisation. Each department is accountable to the operational council and reports directly to the department leadership. Department leadership steers the direction of the department's activities for the accomplishment of the organisation's objectives. Each department should have a distinct focus areas within the organisation and will often need to work with other departments to accomplish the organisation's objectives. Departments comprise of staff and volunteers who carry out the department operations, services and programmes. Staff and volunteers should be provided with job descriptions and training to ensure they are able to perform their roles effectively.
+
+### Department Heads/ Leadership
+
+Department leadership is the responsible for the operations, services and programmes of the department and act as department stakeholders in the operational council. Department leaders should be chosen by a qualified council of peers with approval from a member of the governing board. Department leaders should ensure that the department objectives are aligned with the organisation and that the department staff and volunteers objectives are aligned with the department objectives.  
 
 ## Staff
 
