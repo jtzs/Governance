@@ -23,6 +23,7 @@ The goal of Cyber security is the protection of an Organisation's IT assets. The
 A free resource for learning about cyber security is [IBM Skills build](https://skillsbuild.org/adult-learners/explore-learning/cybersecurity-analyst)
 
 ### Primary Security Concepts (CIA, AAA Triads)
+
 | Term | Definition |
 | ---- | ---------- |
 | Confidentiality | The concept that information should only be revealed to those which you intend to reveal it to. <br/> i.e. Public information should be public and private information should remain private. |
@@ -170,8 +171,10 @@ Important aspects of server security include:
 
 No Organisation is an island, and partners and suppliers often serve as multipliers for an organisation's effectiveness. However, as the network of partners and suppliers expands, it forms a [critical supply chain](https://en.wikipedia.org/wiki/Supply_chain_security) on which the organisation relies. This interdependence brings risks, as vulnerabilities in the supply chain can have far-reaching consequences. As such organisations should be aware of the risks that can arise from their supply chains and take steps to mitigate them.
 
-Some recent prominent examples of supply chain risks include [CrowdStrike outage in 2024](https://www.forbes.com/sites/sap/2024/07/25/crowdstrike-outage-creates-ripple-across-global-supply-chain/) and [Solarwinds Supply chain attack in 2020](https://www.aquasec.com/cloud-native-academy/supply-chain-security/solarwinds-attack/).
-
+Some recent examples of supply chain risks:
+- [CrowdStrike outage in 2024](https://www.forbes.com/sites/sap/2024/07/25/crowdstrike-outage-creates-ripple-across-global-supply-chain/)
+- [Solarwinds Supply chain attack in 2020](https://www.aquasec.com/cloud-native-academy/supply-chain-security/solarwinds-attack/)
+- [Singapore Banks printing vendor ransomware](https://www.channelnewsasia.com/singapore/dbs-bank-china-ransomware-customer-data-printing-vendor-toppan-next-tech-5049616)
 
 ## Email security
 
