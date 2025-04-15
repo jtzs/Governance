@@ -7,6 +7,8 @@
 4. [Departments](#departments)
 5. [Staff](#staff)
 6. [Volunteers](#volunteers)
+7. [Conflict of Interests](#conflict-of-interests)
+8. [Whistleblowing policies](#whistleblowing-policies)
 
 ## Introduction
 
@@ -67,3 +69,15 @@ Volunteers typically form the bulk of an organisation's manpower, they are usual
 ### Volunteer Leaders
 
 Volunteer leaders are volunteers which take on more responsibility and can come in the form of operations, administration, management or regarding the services and programmes run by the organisation. They can assist in managing teams, planning, organising. Volunteers who have taken on leadership role typically have a higher level of relevant experience. With the capacity for additional responsibility it becomes more important to have a clear scope of work to ensure that they are able to carry out their role effectively.
+
+## Conflict of interests
+
+Conflict of interest is defined below:
+- a situation in which someone cannot make a fair decision because they will be affected by the result [Cambridge Dictionary](https://dictionary.cambridge.org/dictionary/english/conflict-of-interest)
+- a conflict between the private interests and the official responsibilities of a person in a position of trust. [Merriam Webster](https://www.merriam-webster.com/dictionary/conflict%20of%20interest)
+
+It is important for an organisation to have a conflict of interest policy to ensure impartiality, transparency and protection from legal and reputational risks. Disclosure of conflict of interests and recusal from the relevant processes will reduce organisational risk that can arise from such situations. Apart from regulatory oversight, conflicts of interests can often lead to breaking of trust in the organisation and leadership that is often difficult to restore.
+
+## Whistleblowing policies
+
+A whistleblowing policy is a policy that protect people or parties that raise concerns regarding that are against organisational policy but are unreported for whatever reason. A whistleblowing policy typically ensure against targeting or retaliation against the reporting parties regardless if the accusations are true and ensures an independent investigation typically reporting directly to senior leadership, board member(s) or an external governance organisation.

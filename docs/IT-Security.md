@@ -5,17 +5,17 @@ The goal of this document it to capture at a very high level broad security conc
 ## Contents
 1. [Introduction](#What-is-cyber-security)
 2. [Data Management](#data-management)
-3. [Risk Management](#risk-management)
-4. [Personal Data Protection Act (PDPA)](#personal-data-protection-act)
-5. [Scams, Social Engineering and Phishing](#scams-social-engineering-and-phishing)
-6. [Malware](#malware)
-7. [Accounts & Passwords](#accounts--passwords)
-8. [Physical cyber security](#physical-cyber-security)
-9. [Application security](#application-security)
-10. [Server security](#server-security)
-11. [Supply Chain Risk management](#supply-chain-risk-management)
-12. [Email security](#email-security)
-13. [Misinformation/ Disinformation](#misinformation-disinformation)
+3. [Personal Data Protection Act (PDPA)](#personal-data-protection-act)
+4. [Scams, Social Engineering and Phishing](#scams-social-engineering-and-phishing)
+5. [Malware](#malware)
+6. [Accounts & Passwords](#accounts--passwords)
+7. [Physical cyber security](#physical-cyber-security)
+8. [Application security](#application-security)
+9. [Server security](#server-security)
+10. [Supply Chain Risk management](#supply-chain-risk-management)
+11. [Email security](#email-security)
+12. [Misinformation/ Disinformation](#misinformation-disinformation)
+13. [Risk Management](#risk-management)
 
 ## What is cyber security
 The goal of Cyber security is the protection of an Organisation's IT assets. There are many threats to an organisation's IT assets, and attackers often do not need a reason to cause damage to an organisation's IT assets. Even the most well prepared organisations, multi-billion companies and first-world governments have difficulties when facing advanced persistent threats that specifically target them. The goal of cyber security is to deter the majority of attackers from causing damage to IT assets, minimising impact when there is damage and reducing downtime with a fast recovery.
@@ -31,11 +31,11 @@ A free resource for learning about cyber security is [IBM Skills build](https://
 | Availability    | The concept that information should be accessible when required. <br/> i.e. Information should be available when required. |
 | Authentication  | The concept that information should only be revealed or actions allowed after a person's identity has been verified through one or more methods. <br/> E.g. Username and Password, Time-based one-time password (TOTP) |
 | Authorization   | The concept that information should only be revealed or actions allowed for people with sufficient or correct rights or entitlements. <br/> E.g. Only Managers should be allowed to approve leave request, Auditors should not be allowed to change information. |
-| Auditing        | THe concept that any action should be recorded and logged as evidence. <br/>  | 
+| Auditability (Non-Repudiation) | The concept that any action should be recorded and logged as evidence. <br/>  | 
 
 ## Data Management
 
-The purpose of proper data management is to ensure organisational knowledge is protected and maintained to ensure it's availability and continuity. The main areas for consideration here are typically data storage and backup and data recovery. The data management strategy chosen should always first consider the data that is being stored as different types of data will require different management strategies.
+The purpose of proper data management is to ensure organisational knowledge is protected and maintained to ensure it's availability and continuity. The main areas for consideration here are typically data storage and backup and data recovery. The data management strategy chosen should always depend on the data and value of the data that is being stored. Next consider any applicable regulations that might apply to the data PDPA, GDPR or HIPPA are just some examples of regulations that might apply to data that you store and will need to comply to. The Data management strategy should always depend on the data being protected, it does not make sense to spend millions protecting data that is only worth thousands and vice versa. 
 
 ### Data storage and backup
 
@@ -50,24 +50,6 @@ Backups and by extension snapshots taken should always be stored with the same o
 Data recovery is a critical part of data management. it is too late when trying to recover important data only to realise that the backups are corrupted or not properly included in the backup strategy. As such it is important to include regular data restoration exercises to ensure the viability of the backups and to ensure that key data is not missed out.
 
 The general recommended practice is to carry out data restoration exercises at least once a year.
-
-## Risk Management
-
-Risk management is the process of identifying, managing and accepting risks in an organisation.
-The risk management process typically follows the following steps
-1. Identification of risks.
-   - What are the organisation's data and activities.
-   - What are the risks associated with those activities, especially referencing the CIA Triad.
-   - Risks should be recorded in a risk register and prioritised based on their criticality, likelihood and impact.
-2. Management of risks.
-   - Risks are typically mitigated through avoidance, reduction, transference or acceptance.
-   - Risks management activities should be recorded as part of risk management and reviewed regularly (annually).
-3. Acceptance of risks.
-   - When risks cannot be cannot further mitigated, the residual risks need to be accepted.
-   - The residual risks should be escalated to the organisational leadership (typically the board) for awareness and acceptance.
-   - Residual Risk acceptance should also be carried out regularly (annually).
-
-[Reference 1](https://www.ibm.com/think/topics/risk-mitigation)
 
 ## Personal Data Protection Act
 
@@ -175,6 +157,7 @@ Some recent examples of supply chain risks:
 - [CrowdStrike outage in 2024](https://www.forbes.com/sites/sap/2024/07/25/crowdstrike-outage-creates-ripple-across-global-supply-chain/)
 - [Solarwinds Supply chain attack in 2020](https://www.aquasec.com/cloud-native-academy/supply-chain-security/solarwinds-attack/)
 - [Singapore Banks printing vendor ransomware](https://www.channelnewsasia.com/singapore/dbs-bank-china-ransomware-customer-data-printing-vendor-toppan-next-tech-5049616)
+- [Elections Department uses the same printing vendor](https://www.channelnewsasia.com/singapore/eld-print-poll-cards-ballot-papers-toppan-ransomware-attack-5052191)
 
 ## Email security
 
@@ -192,7 +175,7 @@ In the age of digital communication, organisations are increasingly reliant on e
 
 Misinformation and Disinformation are two terms that can refer to the same false information but the intent and purpose of the information is different. Misinformation refers to false or misleading information that is shared without malicious intent, while disinformation refers to intentionally and often maliciously distribution of false or misleading information. While misinformation can be unintentional the impact of the information can be equally damaging.
 
-In order to prevent the spread of such false information it is important to verify the source of the information before sharing or using it.
+In order to prevent the spread of such false information it is important to verify the source of the information before sharing or using it.  
 In addition, important aspects of the information to consider:
 - Source of the information
 - Primary Source or Secondary Source
@@ -206,5 +189,26 @@ Examples include
 - [British Medical Journal Parachute Research](https://www.bmj.com/content/363/bmj.k5094)
   - Conclusion: Parachute use did not reduce death or major traumatic injury when jumping from aircraft in the first randomized evaluation of this intervention.
 
-[Misinformation vs. Disinformation Reference 1](https://www.bbc.co.uk/bitesize/articles/z3hhvj6)
-[Misinformation vs. Disinformation Reference 2](https://guides.library.pdx.edu/fakenews)
+[Misinformation vs. Disinformation Reference 1](https://www.bbc.co.uk/bitesize/articles/z3hhvj6)  
+[Misinformation vs. Disinformation Reference 2](https://guides.library.pdx.edu/fakenews) 
+[Singapore fight against Misinformation](https://www.gov.sg/explainers/singapore-fight-against-misinformation)
+[MHA - DISINFORMATION AND INFLUENCE CAMPAIGNS](https://www.mha.gov.sg/docs/default-source/default-document-library/03_22-ne-insights-on-disinformation-and-influence-campaigns.pdf)
+
+## Risk Management
+
+Risk management is the process of identifying, managing and accepting risks in an organisation. Risk management is a foundational element of sustainable and responsible business operations, helping the organisation to identify and plan strategies for facing risks, reducing disruptions when they occur.  
+
+The risk management process typically follows the following steps
+1. Identification of risks.
+   - What are the organisation's data and activities.
+   - What are the risks associated with those activities, especially referencing the CIA Triad.
+   - Risks should be recorded in a risk register and prioritised based on their criticality, likelihood and impact.
+2. Management of risks.
+   - Risks are typically mitigated through avoidance, reduction, transference or acceptance.
+   - Risks management activities should be recorded as part of risk management and reviewed regularly (annually).
+3. Acceptance of risks.
+   - When risks cannot be cannot further mitigated, the residual risks need to be accepted.
+   - The residual risks should be escalated to the organisational leadership (typically the board) for awareness and acceptance.
+   - Residual Risk acceptance should also be carried out regularly (annually).
+
+[Reference 1](https://www.ibm.com/think/topics/risk-mitigation)
