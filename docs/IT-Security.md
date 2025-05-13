@@ -193,6 +193,7 @@ Examples include
 [Misinformation vs. Disinformation Reference 2](https://guides.library.pdx.edu/fakenews) 
 [Singapore fight against Misinformation](https://www.gov.sg/explainers/singapore-fight-against-misinformation)
 [MHA - DISINFORMATION AND INFLUENCE CAMPAIGNS](https://www.mha.gov.sg/docs/default-source/default-document-library/03_22-ne-insights-on-disinformation-and-influence-campaigns.pdf)
+[Halimah Yacob Deepfakes](https://www.channelnewsasia.com/singapore/halimah-yacob-deepfake-video-criticisng-government-ge2025-police-report-5066581)
 
 ## Risk Management
 
