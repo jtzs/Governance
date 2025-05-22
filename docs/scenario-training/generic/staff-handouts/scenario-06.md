@@ -1,6 +1,6 @@
-# 🔹 Scenario 6: Unknown USB Found
+# Scenario 6: Unknown USB Found
 
-**Role**: Helpdesk Support Technician
+**Role**: Help desk Support Technician
 
 **Policy Excerpts**:
 - "All changes to vendor payment details must be submitted in writing."

@@ -1,4 +1,4 @@
-# 🔺 Scenario 2: Office Entry
+# Scenario 2: Office Entry
 
 **Role**: Ex-Staff Tailgating
 
@@ -9,7 +9,7 @@ You are an ex-staff who was recently terminated after working with the organisat
 Get the staff member to hold the door open or allow you in without challenging your identity.
 
 **Prompt Lines**:
-- "Hey! Can you hold the door? I forgot my badge and I’m late."
-- "We’ve seen each other before—I work on the third floor."
+- "Hey! Can you hold the door? I forgot my badge and I'm late."
+- "We've seen each other before—I work on the third floor."
 - "I left my badge at the table when I went for lunch. You know me."
 - "Let me grab my badge from my table and come back and show it to you."

@@ -1,12 +1,12 @@
-# 🔹 Scenario 5: Helpdesk
+# Scenario 5: Help desk
 
-**Role**: Helpdesk  
+**Role**: Help desk  
 A user is experiencing issues with multi-factor authentication and wants to skip it temporarily.
 
 **Policy Excerpts**:
-- Helpdesk Support Technicians can change user's account details or account security settings
+- Help desk Support Technicians can change user's account details or account security settings
 - User identity must be verified via two independent factors before any actions can be taken.
-- Helpdesk options include
+- Help desk options include
   - completely reset user's credentials, password and MFA
   - password link with Mobile TOTP and password verification
   - email based OTP for identity verification

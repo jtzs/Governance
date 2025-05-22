@@ -1,4 +1,4 @@
-# 🔺 Scenario 1: VPN Access Request (Malicious)
+# Scenario 1: VPN Access Request (Malicious)
 
 **Role**: Malicious user
 
@@ -10,9 +10,9 @@ You are pretending to be a company employee (Michael Wong) stuck out of the offi
 - You have stolen access to the email (MichaelWong@company.com) and have temporary access but will lose access upon reset of credentials
 
 **Objective**:  
-Convince the helpdesk to help you a set a password or provide VPN access without multi factor verification.
+Convince the help desk to help you a set a password or provide VPN access without multi factor verification.
 
 **Prompt Lines**:
-- "This is Michael from Sales. I can’t log into the VPN."
-- "I left my phone in the hotel. I’m about to present to a client—can you just reset it?"
+- "This is Michael from Sales. I can't log into the VPN."
+- "I left my phone in the hotel. I'm about to present to a client—can you just reset it?"
 - "I am currently on a business trip and won't be back this week."

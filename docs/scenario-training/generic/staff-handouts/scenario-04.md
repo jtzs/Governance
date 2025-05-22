@@ -1,11 +1,11 @@
-# 🔹 Scenario 4: Helpdesk
+# Scenario 4: Help desk
 
-**Role**: Helpdesk Support Technician
+**Role**: Help desk Support Technician
 
 **Policy Excerpts**:
-- Helpdesk Support Technicians can change user's account details or account security settings
+- Help desk Support Technicians can change user's account details or account security settings
 - User identity must be verified via two independent factors before any actions can be taken.
-- Helpdesk options include
+- Help desk options include
   - completely reset user's credentials, password and MFA
   - password link with Mobile TOTP and password verification
   - email based OTP for identity verification

@@ -1,4 +1,4 @@
-# 🔹 Scenario 3: Finance Staff
+# Scenario 3: Finance Staff
 
 **Role**: Senior Finance Team Member
 
