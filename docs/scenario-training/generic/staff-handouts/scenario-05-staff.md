@@ -1,4 +1,4 @@
-# Scenario 5: Help desk
+# Scenario 5 Staff: Help desk
 
 **Role**: Help desk  
 A user is experiencing issues with multi-factor authentication and wants to skip it temporarily.

@@ -1,4 +1,4 @@
-# Scenario 6: Found USB Stick
+# Scenario 6 User: Assistance with USB
 
 **Role**: Senior Finance Team Member
 

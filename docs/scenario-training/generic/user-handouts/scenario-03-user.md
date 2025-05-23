@@ -1,4 +1,4 @@
-# Scenario 3: Vendor Bank Change Request (Malicious)
+# Scenario 3 User: Vendor Bank Change Request
 
 **Role**: Impersonator (posing as a vendor representative)
 

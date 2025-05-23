@@ -1,4 +1,4 @@
-# Scenario 2: Office Entry
+# Scenario 2 User: Office Entry
 
 **Role**: Ex-Staff Tailgating
 

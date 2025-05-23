@@ -1,8 +1,7 @@
-# Scenario 6: Unknown USB Found
+# Scenario 3 Staff: Finance Staff
 
-**Role**: Help desk Support Technician
+**Role**: Senior Finance Team Member
 
 **Policy Excerpts**:
 - "All changes to vendor payment details must be submitted in writing."
 - "Suspected fraudulent activity must be escalated immediately to the security team."
-- "Unknown storage devices must never be inserted into company systems."

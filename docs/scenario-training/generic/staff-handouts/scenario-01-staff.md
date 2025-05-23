@@ -1,4 +1,4 @@
-# Scenario 4: Help desk
+# Scenario 1 Staff: Help desk
 
 **Role**: Help desk Support Technician
 

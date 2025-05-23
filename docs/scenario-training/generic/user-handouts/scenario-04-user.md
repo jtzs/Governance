@@ -1,4 +1,4 @@
-# Scenario 4: Phishing Click Report (Regular User)
+# Scenario 4 User: Phishing Click Report
 
 **Role**: Employee
 

@@ -1,4 +1,4 @@
-# Scenario 5: MFA Complaint (Regular User)
+# Scenario 5 User: MFA Complaint
 
 **Role**: Senior Employee
 

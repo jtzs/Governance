@@ -1,4 +1,4 @@
-# Scenario 1: VPN Access Request (Malicious)
+# Scenario 1 User: VPN Access Request
 
 **Role**: Malicious user
 

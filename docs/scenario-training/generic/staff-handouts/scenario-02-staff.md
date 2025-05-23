@@ -1,4 +1,4 @@
-# Scenario 2: Office Entry
+# Scenario 2 Staff: Office Entry
 
 **Role**: Staff at Office reception
 
