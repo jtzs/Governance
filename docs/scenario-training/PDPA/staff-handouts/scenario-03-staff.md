@@ -1,4 +1,4 @@
-# Scenario 3: Personal Data Access for a Job Application 
+# Scenario 3 Staff: Personal Data Access for a Job Application 
 
 **Role**: Data Protection Officer (DPO)
 
