@@ -17,6 +17,9 @@ Each scenario includes:
 
 2. **user-handouts**: Contains the handouts for the users interacting with the staff
 
+- [Generic scenarios](./generic/README.md)
+- [PDPA scenarios](./PDPA/README.md)
+
 ## 🚀 How to Run a Scenario
 
 1. **Facilitator should explain the broad scenario**:
@@ -42,4 +45,3 @@ Each scenario includes:
 - Understand how **social engineering** manipulates goodwill, trust, urgency, and social norms.
 - Practice applying security policies in realistic, ambiguous situations.
 - Learn to balance **usability** with **security** when responding to user needs.
-
