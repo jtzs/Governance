@@ -1,4 +1,4 @@
-# Scenario 4 User: Request for Data Deletion After Contract Termination
+# Scenario 10 User: Request for Data Deletion After Contract Termination
 
 **Role**: Former Employee  
 **Background**:  

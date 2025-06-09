@@ -1,8 +1,8 @@
-# Scenario 1 Staff: Request for Personal Data
+# Scenario 11 Staff: Data Protection Officer
 
-**Role**: Data Protection Officer (DPO)  
+**Role**: Data Protection Officer
 
-**Policy Excerpts**:
+**Relevant PDPA Policy Excerpts**:
 - "Personal data should only be used for the purposes for which it was collected."
 - "Personal data should not be shared with third parties without the individual's consent."
 - "Personal data requests must be verified before disclosure."

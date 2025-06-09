@@ -1,4 +1,4 @@
-# Scenario 2 Staff: Data Access Request for Marketing Purposes 
+# Scenario 7 Staff: Request for Personal Data
 
 **Role**: Data Protection Officer (DPO)  
 

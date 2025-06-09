@@ -1,11 +1,9 @@
-# Scenario 5 Staff: Finance Officer
+# Scenario 14 Staff: Accounts Payable Clerk
 
-**Role**: Finance Officer
+**Role**: Finance Team Member
 
 **Policy Excerpts**:
-- "Financial transactions above $1000 must be verified by the Project Finance Manager."
-- "Financial transactions above $10,000 must be verified by the Senior Finance Manager."
-- "Financial transactions above $50,000 must be verified by the CFO."
+- "All changes to vendor payment details must be submitted in writing."
 - "Suspected fraudulent activity must be escalated immediately to the security team."
 
 **Organisation Structure**

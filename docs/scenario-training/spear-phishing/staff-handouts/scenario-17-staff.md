@@ -1,9 +1,12 @@
-# Scenario 3 Staff: Hiring Manager
+# Scenario 17 Staff: Finance Officer
 
-**Role**: Hiring Manager
+**Role**: Finance Officer
 
 **Policy Excerpts**:
-
+- "Financial transactions above $1000 must be verified by the Project Finance Manager."
+- "Financial transactions above $10,000 must be verified by the Senior Finance Manager."
+- "Financial transactions above $50,000 must be verified by the CFO."
+- "Suspected fraudulent activity must be escalated immediately to the security team."
 
 **Organisation Structure**
 | Position/Title                   | Name           | Reporting Officer         |

@@ -1,8 +1,8 @@
-# Scenario 5 Staff: Data Protection Officer
+# Scenario 8 Staff: Data Access Request for Marketing Purposes 
 
-**Role**: Data Protection Officer
+**Role**: Data Protection Officer (DPO)  
 
-**Relevant PDPA Policy Excerpts**:
+**Policy Excerpts**:
 - "Personal data should only be used for the purposes for which it was collected."
 - "Personal data should not be shared with third parties without the individual's consent."
 - "Personal data requests must be verified before disclosure."

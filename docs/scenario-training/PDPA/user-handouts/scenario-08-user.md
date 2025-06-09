@@ -1,4 +1,4 @@
-# Scenario 2 User: Data Access Request for Marketing Purposes
+# Scenario 8 User: Data Access Request for Marketing Purposes
 
 **Role**: Marketing Staff (Malicious User)  
 **Background**:  

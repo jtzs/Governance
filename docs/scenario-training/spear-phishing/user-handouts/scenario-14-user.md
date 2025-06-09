@@ -1,4 +1,4 @@
-# Scenario 2 User: Compromised Vendor Email
+# Scenario 14 User: Compromised Vendor Email
 
 **Background**: You are using a compromised vendor email account to request a payment to a new bank account.
 

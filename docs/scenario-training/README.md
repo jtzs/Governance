@@ -19,6 +19,8 @@ Each scenario includes:
 
 - [Generic scenarios](./generic/README.md)
 - [PDPA scenarios](./PDPA/README.md)
+- [Spear Phishing scenarios](./spear-phishing/README.md)
+
 
 ## 🚀 How to Run a Scenario
 

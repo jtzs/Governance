@@ -1,4 +1,4 @@
-# Scenario 1 User: Deepfake Video Call from CEO
+# Scenario 13 User: Deepfake Video Call from CEO
 
 **Background**: You are impersonating the CEO (Alex Tan) and CFO (Susan Lim) using a deepfake video call. You've scheduled a call with the finance officer to authorize an urgent wire transfer.
 

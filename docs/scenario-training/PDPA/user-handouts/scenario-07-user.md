@@ -1,4 +1,4 @@
-# Scenario 1 User: Request for Personal Data
+# Scenario 7 User: Request for Personal Data
 
 **Role**: Customer Impersonator 
   

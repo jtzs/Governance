@@ -1,4 +1,4 @@
-# Scenario 4 Staff: Request for Data Deletion After Contract Termination
+# Scenario 10 Staff: Request for Data Deletion After Contract Termination
 
 **Role**: Data Protection Officer (DPO)
 

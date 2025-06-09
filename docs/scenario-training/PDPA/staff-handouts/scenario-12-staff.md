@@ -1,4 +1,4 @@
-# Scenario 6 Staff: Data Protection Officer
+# Scenario 12 Staff: Data Protection Officer
 
 **Role**: Data Protection Officer
 
