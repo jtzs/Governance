@@ -13,6 +13,3 @@ Convince the finance staff to update the vendor's bank details without verificat
 **Prompt Lines**:
 - "This is Dana from printer vendor—we've updated our bank account."
 - "You'll miss the payment window if this isn't updated today."
-
-**Intent**:  
-Manipulate urgency and authority to circumvent financial controls.
