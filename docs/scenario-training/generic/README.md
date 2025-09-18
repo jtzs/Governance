@@ -2,29 +2,40 @@
 
 - Staff Handouts
   - Scenario 1
-    - [Staff  Handout](./staff-handouts/scenario-01-staff.md)
+    - [Staff  Handout](./staff-handouts/scenario-generic-01-staff.md)
   - Scenario 2
-    - [Staff  Handout](./staff-handouts/scenario-02-staff.md)
+    - [Staff  Handout](./staff-handouts/scenario-generic-02-staff.md)
   - Scenario 3
-    - [Staff  Handout](./staff-handouts/scenario-03-staff.md)
+    - [Staff  Handout](./staff-handouts/scenario-generic-03-staff.md)
   - Scenario 4
-    - [Staff  Handout](./staff-handouts/scenario-04-staff.md)
+    - [Staff  Handout](./staff-handouts/scenario-generic-04-staff.md)
   - Scenario 5
-    - [Staff  Handout](./staff-handouts/scenario-05-staff.md)
+    - [Staff  Handout](./staff-handouts/scenario-generic-05-staff.md)
   - Scenario 6
-    - [Staff  Handout](./staff-handouts/scenario-06-staff.md)
+    - [Staff  Handout](./staff-handouts/scenario-generic-06-staff.md)
+  - Scenario 7
+    - [Staff  Handout](./staff-handouts/scenario-generic-07-staff.md)
+  - Scenario 8
+    - [Staff  Handout](./staff-handouts/scenario-generic-08-staff.md)
+  - Scenario 9
+    - [Staff  Handout](./staff-handouts/scenario-generic-09-staff.md)
 
 - User Handouts
   - Scenario 1
-    - [User Handout](./user-handouts/scenario-01-user.md)
+    - [User Handout](./user-handouts/scenario-generic-01-user.md)
   - Scenario 2
-    - [User Handout](./user-handouts/scenario-02-user.md)
+    - [User Handout](./user-handouts/scenario-generic-02-user.md)
   - Scenario 3
-    - [User Handout](./user-handouts/scenario-03-user.md)
+    - [User Handout](./user-handouts/scenario-generic-03-user.md)
   - Scenario 4
-    - [User Handout](./user-handouts/scenario-04-user.md)
+    - [User Handout](./user-handouts/scenario-generic-04-user.md)
   - Scenario 5
-    - [User Handout](./user-handouts/scenario-05-user.md)
+    - [User Handout](./user-handouts/scenario-generic-05-user.md)
   - Scenario 6
-    - [User Handout](./user-handouts/scenario-06-user.md)
-
+    - [User Handout](./user-handouts/scenario-generic-06-user.md)
+  - Scenario 7
+    - [User Handout](./user-handouts/scenario-generic-07-user.md)
+  - Scenario 8
+    - [User Handout](./user-handouts/scenario-generic-08-user.md)
+  - Scenario 9
+    - [User Handout](./user-handouts/scenario-generic-09-user.md)
