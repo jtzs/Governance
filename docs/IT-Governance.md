@@ -91,11 +91,11 @@ The scope of this document should include the following users
 1. If you suspect your account has been hacked, do inform the Executive Director immediately.
 2. Passwords should not be shared to anyone. 
 3. If absolutely necessary, you should be the one to type in the password. e.g. for IT support/Troubleshooting. After the issue has been resolved, your password should be changed immediately.
-4. Passwords should following the following recommended complexity
+4. Passwords complexity requirements
     1. At least 10 Characters long
     2. Contain a mix of uppercase, lower case Characters, numbers and special characters
     3. As far as possible [passphrases](https://en.wikipedia.org/wiki/Passphrase) should be used e.g. 3LongRedCars!, 5BlackCrowsOutside?, Romans12:1Therefore
-    4. Password complexity can be checked using online tools [CSA Password Checker](https://ihp.csa.gov.sg/password-checker) [HaveIBeenPwned](https://haveibeenpwned.com/Passwords). These should only be used as an estimate of what a secure password should be.
+    4. Password complexity can be checked using online tools [CSA Password Checker](https://ihp.csa.gov.sg/password-checker) or [HaveIBeenPwned](https://haveibeenpwned.com/Passwords). These should only be used as an estimate of what a secure password should be.
 5. Never enter your username and password into suspicious websites.
 6. Do not open any suspicious links, files or attachments that are sent to you, always prefer to type in the URL if you are unsure.  Example: [apple.com](https://www.xn--80ak6aa92e.com/)
 7. Endpoint Protection software should be installed in the device if possible. E.g. [Windows Defender](https://www.microsoft.com/en-sg/windows/comprehensive-security)
