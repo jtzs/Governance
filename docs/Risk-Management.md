@@ -3,9 +3,9 @@
 The goal of this document is to guide an organisation in conducting general risk management. However, due to the uniqueness of every organisation, its circumstances, environment, and external factors, the way this document is applied will differ. As such, this document serves only as a guide, and proper risk management should be carried out by trained and certified personnel with knowledge of the organisation's internal and external factors.
 
 ## Contents
-1. Introduction to Risk Management
-2. Risk Management Definitions
-3. Risk Management Process
+1. [Introduction to Risk Management](#introduction-to-risk-management)
+2. [Risk Management Definitions](#risk-management-definitions)
+3. [Risk Management Process](#risk-management-process)
 
 ## Introduction to Risk Management
 
