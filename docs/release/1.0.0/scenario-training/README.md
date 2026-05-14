@@ -5,9 +5,9 @@ This repository contains a series of interactive role-play scenarios designed to
 Each scenario includes:
 
 - A **User Handout**: background and dialogue prompts (role may be malicious or regular)
-- A **Staff Handout**: job role and relevant excerpts from the organization's security policy
+- A **Staff Handout**: job role and relevant excerpts from the organisation's security policy
 
-> 🔒 **Key Principle**: Staff do not know if the user they are interacting with is malicious or legitimate. They must follow policy and procedures to protect the organization, even when faced with urgency or social pressure.
+> 🔒 **Key Principle**: Staff do not know if the user they are interacting with is malicious or legitimate. They must follow policy and procedures to protect the organisation, even when faced with urgency or social pressure.
 
 ---
 

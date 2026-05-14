@@ -88,7 +88,7 @@ One concerning trend with the creation of deepfake and the rise of easily access
 
 ## Malware
 
-Malware is a combination of the words malicious and software and defines a wide range of software that can be used to attack an organization. The earliest malware started in the form of spambots and viruses which primarily served to spread and spam other users on the network or to cause the device to be difficult to use.
+Malware is a combination of the words malicious and software and defines a wide range of software that can be used to attack an organisation. The earliest malware started in the form of spambots and viruses which primarily served to spread and spam other users on the network or to cause the device to be difficult to use.
 
 - Keyloggers are a type of malware that can record keystrokes and send them to the attacker.
 - Rootkits are a type of malware that would allow attackers to gain access to systems without the knowledge of the system owner.
