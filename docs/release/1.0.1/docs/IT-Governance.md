@@ -12,6 +12,7 @@
 8. [Security](#8-security)
 9. [Audit and Review](#9-audit-and-review)
 10. [Exceptions](#10-exceptions)
+11. [Annex A: Password Complexity Standard](#annex-a-password-complexity-standard)
 
 
 ## 1. Introduction
@@ -209,3 +210,4 @@ Password complexity can be checked using online tools as a guide:
 3. Change passwords immediately if compromise is suspected
 4. Never write passwords down in plain text
 5. Avoid using personal information (names, birthdays, etc.) in passwords
+

@@ -15,7 +15,7 @@ I am Joshua, a certified security architect (CISSP, CISM). I have created this t
 
 | Version | Release Date | Status     | Summary of Changes |
 |---------|--------------|------------|--------------------|
-| [1.0.1](https://jtzs.github.io/Governance/docs/release/1.0.1/) | 2026-05-14 | Current | Grammatical fixes, suggestions from Executive Director, and updated risk management process |
+| [1.0.1](https://jtzs.github.io/Governance/docs/release/1.0.1/) | 2026-05-14 | Superseded | Grammatical fixes, suggestions from Executive Director, and updated risk management process |
 | [1.0.0](https://jtzs.github.io/Governance/docs/release/1.0.0/) | 2025-08-12 | Superseded | Initial release |
 
 ## Closing remarks
