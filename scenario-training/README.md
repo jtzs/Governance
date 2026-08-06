@@ -21,6 +21,10 @@ Each scenario includes:
 - [PDPA scenarios](./PDPA/README.md)
 - [Spear Phishing scenarios](./spear-phishing/README.md)
 
+3. **twine**: Contains interactive story versions of each scenario (playable in a browser)
+
+- [Interactive Twine Scenarios](./twine/README.md)
+
 
 ## 🚀 How to Run a Scenario
 

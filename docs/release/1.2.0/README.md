@@ -8,7 +8,7 @@ I am Joshua, a certified security architect (CISSP, CISM). I have created this t
 2. [IT Security](./docs/IT-Security.md)
 3. [Organisation](./docs/Organisation.md)
 4. [Glossary](./docs/Glossary.md)
-5. [Scenario Training](./scenario-training/README.md)
+5. [Scenario Training](https://jtzs.github.io/Governance/scenario-training/)
 6. [FAQ](./docs/FAQ.md)
 
 ## Version Table

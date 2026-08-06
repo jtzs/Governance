@@ -1,0 +1,294 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PDPA Scenario 2</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,"Segoe UI",system-ui,sans-serif;background:#eef0f3;color:#1f2328;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
+  #story{background:#fff;border:1px solid #e5e7eb;border-radius:8px;max-width:680px;width:100%;padding:32px 36px;line-height:1.65}
+
+  h1{font-size:1.15rem;font-weight:700;margin-bottom:2px}
+  .subtitle{font-size:.8rem;color:#57606a;margin-bottom:18px}
+  p{font-size:.9rem;margin-bottom:12px}
+
+  .card{background:#eef0f3;border:1px solid #e5e7eb;border-radius:6px;padding:13px 16px;margin-bottom:12px;font-size:.88rem}
+  .card strong{display:block;margin-bottom:5px}
+  ul{padding-left:17px;margin-top:4px} li{margin-bottom:3px;font-size:.88rem}
+
+  .user-bg{background:#ffedd5;border-color:#fdba74}
+  .staff-bg{background:#e0e7ff;border-color:#a5b4fc}
+
+  .banner{display:flex;align-items:center;gap:9px;border-radius:6px;padding:9px 14px;margin-bottom:16px;font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+  .banner.user{background:#ffedd5;border:1px solid #fdba74;color:#9a3412}
+  .banner.staff{background:#e0e7ff;border:1px solid #a5b4fc;color:#3730a3}
+  .banner.waiting{background:#eef0f3;border:1px solid #e5e7eb;color:#57606a}
+  .banner .dot{width:7px;height:7px;border-radius:50%;flex-shrink:0}
+  .banner.user .dot{background:#ea580c}
+  .banner.staff .dot{background:#4f46e5}
+  .banner.waiting .dot{background:#9ca3af}
+
+  .choices{display:flex;flex-direction:column;gap:8px;margin-top:16px}
+  button{background:#fff;border:1px solid #e5e7eb;border-radius:6px;padding:11px 15px;text-align:left;cursor:pointer;font-size:.88rem;color:#1f2328;transition:all .15s;line-height:1.45}
+  button:hover{border-color:#3b82d4;background:#f0f6ff}
+  .btn-primary{background:#3b82d4;color:#fff;border-color:#3b82d4;font-weight:600;text-align:center}
+  .btn-primary:hover{background:#2563b0;border-color:#2563b0}
+  .btn-user{background:#ffedd5;border-color:#fdba74;color:#9a3412}
+  .btn-user:hover{background:#ffedd5;border-color:#f97316}
+  .btn-staff{background:#e0e7ff;border-color:#a5b4fc;color:#3730a3}
+  .btn-staff:hover{background:#e0e7ff;border-color:#6366f1}
+  .option-num{display:inline-block;min-width:22px;font-weight:700;opacity:.5;font-size:.78rem;margin-right:4px}
+
+  .wait-box{border:2px dashed #e5e7eb;border-radius:8px;padding:22px 20px;text-align:center;margin:16px 0;color:#57606a;font-size:.9rem}
+  .wait-box .wait-icon{font-size:1.8rem;margin-bottom:8px}
+  .wait-box strong{color:#1f2328;display:block;margin-bottom:4px}
+
+  .debrief-block{border-radius:6px;padding:13px 16px;margin-bottom:10px;font-size:.85rem;border:1px solid;line-height:1.6}
+  .debrief-block.user{background:#ffedd5;border-color:#fdba74}
+  .debrief-block.staff{background:#e0e7ff;border-color:#a5b4fc}
+  .debrief-block .who{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px;opacity:.7}
+  .debrief-block .choice{font-weight:600;margin-bottom:4px}
+  .debrief-block .said{font-style:italic;font-size:.86rem;margin-bottom:6px}
+  .debrief-block .note{font-size:.82rem;color:#57606a;border-top:1px solid rgba(0,0,0,.08);padding-top:7px}
+  .debrief-block.good{background:#f0fdf4;border-color:#86efac}
+  .debrief-block.bad{background:#fef2f2;border-color:#fca5a5}
+
+  hr.div{border:none;border-top:1px solid #e5e7eb;margin:18px 0}
+  footer{text-align:center;font-size:.7rem;color:#57606a;border-top:1px solid #e5e7eb;margin-top:22px;padding-top:12px}
+</style>
+</head>
+<body>
+<div id="story"></div>
+<script>
+let myRole = null;
+let userPicked = null;
+let staffPicked = null;
+
+const scenario = {
+  title: 'PDPA Scenario 2',
+  scene: 'A Marketing staff member pressures the DPO to release a customer data list for a campaign, despite having no documented consent from those customers.',
+
+  user_handout: [
+    'You are <strong>Marketing Staff</strong> seeking access to a customer data list for a time-sensitive campaign.',
+    'The customers on this list have not given explicit consent for marketing use of their data — but you are downplaying this.',
+    'Your goal: convince the DPO to release the data quickly, using deadline pressure and the idea that the data is "already available".',
+    '<em>Suggested lines: "We need this for a time-sensitive campaign — can\'t you just make an exception?" / "Management is expecting this and I\'m on a deadline."</em>'
+  ],
+
+  staff_handout: [
+    'You are the <strong>Data Protection Officer (DPO)</strong>.',
+    'Policy: "Personal data should only be used for the purposes for which it was collected."',
+    'Policy: "Personal data should not be shared with third parties without the individual\'s consent."',
+    'Policy: "Personal data requests must be verified before disclosure."',
+    '<em>You do not know the consent status from this conversation alone — you must check before releasing anything.</em>'
+  ],
+
+  user: {
+    prompt: 'The DPO is available. Choose your approach and act it out.',
+    options: [
+      { label: 'Invoke urgency and management pressure',
+        line: '"The marketing campaign launches tomorrow and management is expecting results. We just need the customer list — can\'t you make a quick exception this once?"' },
+      { label: 'Downplay the consent issue',
+        line: '"The data is already in our system, it\'s not like we\'re getting it from outside. It\'s no big deal to share it for marketing purposes."' },
+      { label: 'Claim implicit consent',
+        line: '"These customers signed up with us — they obviously expect to hear from us. Surely that counts as consent for marketing?"' }
+    ]
+  },
+
+  staff: {
+    prompt: 'The marketing staff member has made their request. Choose your response and act it out.',
+    options: [
+      { label: 'Decline and explain the consent requirement',
+        line: '"I understand the deadline pressure, but I can\'t release personal data for a purpose it wasn\'t collected for without documented consent. Let\'s look at what consent we do have and work from there."',
+        rating: 'good',
+        debrief: 'Personal data may only be used for the purpose it was originally collected for. Using customer data for marketing without explicit consent is a PDPA breach, regardless of internal deadlines or management pressure. The DPO should help find a compliant path — checking what consent exists — rather than simply refusing, but must not release unconsented data.' },
+      { label: 'Release the data given the deadline',
+        line: '"Okay, given the deadline and the fact that the data is already in our system, I\'ll approve the release this time."',
+        rating: 'bad',
+        debrief: 'This is a direct PDPA violation. Data collected for one purpose cannot be repurposed without consent, and urgency or management pressure are not valid exceptions. Approving this release exposes the organisation to regulatory penalties and erodes customer trust.' },
+      { label: 'Ask for approval from a manager first',
+        line: '"This feels like a grey area — let me check with my manager and get back to you. In the meantime, hold off on the campaign."',
+        rating: 'bad',
+        debrief: 'Consent is not a grey area. Escalating a clear policy breach to a manager instead of applying policy knowledge is a failure of the DPO role. The DPO should know that marketing without consent is prohibited and act on that, not defer to hierarchy.' }
+    ]
+  }
+};
+
+// ── Engine ─────────────────────────────────────────────────────────────────
+
+function render(html) {
+  document.getElementById('story').innerHTML = html +
+    `<footer>${scenario.title.split(' - ')[0]}</footer>`;
+  window.scrollTo(0, 0);
+}
+
+function banner(type) {
+  const cfg = {
+    user:    ['user',    '🎭 Your turn — User'],
+    staff:   ['staff',   '🛡️ Your turn — Staff'],
+    waiting: ['waiting', '⏳ Waiting…']
+  }[type];
+  return `<div class="banner ${cfg[0]}"><span class="dot"></span>${cfg[1]}</div>`;
+}
+
+// ── Start & handout ────────────────────────────────────────────────────────
+
+function showStart() {
+  render(`
+    <h1>PDPA Scenario 2</h1>
+    <div class="card">
+      <strong>How this works</strong>
+      Each player opens this file on their own device and selects a role.
+      The User goes first — pick an approach and act it out. Then the Staff player picks their response.
+      A debrief is shown at the end.
+    </div>
+    <div class="card">${scenario.scene}</div>
+    <div class="choices">
+      <button class="btn-user"  onclick="pickRole('user')">🎭 I am the <strong>User</strong></button>
+      <button class="btn-staff" onclick="pickRole('staff')">🛡️ I am the <strong>Staff</strong></button>
+    </div>`);
+}
+
+function pickRole(r) {
+  myRole = r;
+  showHandout();
+}
+
+function showHandout() {
+  const items = (myRole === 'user' ? scenario.user_handout : scenario.staff_handout)
+    .map(t => `<li>${t}</li>`).join('');
+  const cls   = myRole === 'user' ? 'user-bg' : 'staff-bg';
+  const emoji = myRole === 'user' ? '🎭' : '🛡️';
+  const label = myRole === 'user' ? 'User' : 'Staff';
+  const hint  = myRole === 'user'
+    ? 'You go first. Click below when both players are ready.'
+    : 'The User goes first. Click below when both players are ready.';
+  const nextFn = myRole === 'user' ? `showUserTurn()` : `showStaffWaiting()`;
+  render(`
+    <h1>Your Handout</h1>
+    <p class="subtitle">${scenario.title}</p>
+    <div class="card ${cls}">
+      <strong>${emoji} ${label} — read before you begin</strong>
+      <ul style="margin-top:8px">${items}</ul>
+    </div>
+    <p style="font-size:.84rem;color:#57606a">${hint}</p>
+    <div class="choices"><button class="btn-primary" onclick="${nextFn}">▶ Ready</button></div>`);
+}
+
+// ── User turn ──────────────────────────────────────────────────────────────
+
+function showUserTurn() {
+  const opts = scenario.user.options.map((o, i) => `
+    <button class="btn-user" onclick="userPick(${i})">
+      <span class="option-num">${i+1}.</span>
+      <strong>${o.label}</strong><br>
+      <span style="font-size:.82rem;opacity:.8;font-style:italic">${o.line}</span>
+    </button>`).join('');
+  render(`
+    ${banner('user')}
+    <h1>The DPO Is Available</h1>
+    <p>${scenario.user.prompt}</p>
+    <div class="choices">${opts}</div>`);
+}
+
+function userPick(idx) {
+  userPicked = idx;
+  const opt = scenario.user.options[idx];
+  render(`
+    ${banner('user')}
+    <h1>You said…</h1>
+    <div class="card user-bg">
+      <strong>${opt.label}</strong>
+      <div style="margin-top:6px;font-style:italic;font-size:.88rem">${opt.line}</div>
+    </div>
+    <div class="wait-box">
+      <div class="wait-icon">⏳</div>
+      <strong>Waiting for the staff player to respond…</strong>
+      When they have finished, click Done.
+    </div>
+    <div class="choices"><button class="btn-primary" onclick="showDebrief()">Done ▶</button></div>`);
+}
+
+// ── Staff turn ─────────────────────────────────────────────────────────────
+
+function showStaffWaiting() {
+  render(`
+    ${banner('waiting')}
+    <h1>User Is Going First…</h1>
+    <p style="font-size:.85rem;color:#57606a">The user player is making their approach. Pay attention — then click Continue when they have finished.</p>
+    <div class="choices"><button class="btn-primary" onclick="showStaffTurn()">▶ Continue</button></div>`);
+}
+
+function showStaffTurn() {
+  const opts = scenario.staff.options.map((o, i) => `
+    <button class="btn-staff" onclick="staffPick(${i})">
+      <span class="option-num">${i+1}.</span>
+      <strong>${o.label}</strong><br>
+      <span style="font-size:.82rem;opacity:.8;font-style:italic">${o.line}</span>
+    </button>`).join('');
+  render(`
+    ${banner('staff')}
+    <h1>How Do You Respond?</h1>
+    <p>${scenario.staff.prompt}</p>
+    <div class="choices">${opts}</div>`);
+}
+
+function staffPick(idx) {
+  staffPicked = idx;
+  const opt = scenario.staff.options[idx];
+  render(`
+    ${banner('staff')}
+    <h1>You said…</h1>
+    <div class="card staff-bg">
+      <strong>${opt.label}</strong>
+      <div style="margin-top:6px;font-style:italic;font-size:.88rem">${opt.line}</div>
+    </div>
+    <div class="wait-box">
+      <div class="wait-icon">⏳</div>
+      <strong>Waiting for the user player to finish…</strong>
+      When they have clicked Done, click Done here too.
+    </div>
+    <div class="choices"><button class="btn-primary" onclick="showDebrief()">Done ▶</button></div>`);
+}
+
+// ── Debrief ────────────────────────────────────────────────────────────────
+
+function showDebrief() {
+  const uOpt = userPicked  !== null ? scenario.user.options[userPicked]   : null;
+  const sOpt = staffPicked !== null ? scenario.staff.options[staffPicked] : null;
+
+  const uBlock = uOpt ? `
+    <div class="debrief-block user">
+      <div class="who">🎭 User</div>
+      <div class="choice">${uOpt.label}</div>
+      <div class="said">${uOpt.line}</div>
+    </div>` : '';
+
+  const sBlock = sOpt ? `
+    <div class="debrief-block staff ${sOpt.rating}">
+      <div class="who">🛡️ Staff</div>
+      <div class="choice">${sOpt.label}</div>
+      <div class="said">${sOpt.line}</div>
+      <div class="note">${sOpt.debrief}</div>
+    </div>` : '';
+
+  render(`
+    <h1>Debrief</h1>
+    <p class="subtitle">${scenario.title}</p>
+    ${uBlock}
+    ${sBlock}
+    <hr class="div">
+    <div class="choices"><button class="btn-primary" onclick="restartScenario()">↩ Run again</button></div>`);
+}
+
+function restartScenario() {
+  myRole = null;
+  userPicked = null;
+  staffPicked = null;
+  showStart();
+}
+
+showStart();
+</script>
+</body>
+</html>

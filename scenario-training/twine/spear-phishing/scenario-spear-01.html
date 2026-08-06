@@ -1,0 +1,282 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Spear Phishing Scenario 1</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,"Segoe UI",system-ui,sans-serif;background:#eef0f3;color:#1f2328;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
+  #story{background:#fff;border:1px solid #e5e7eb;border-radius:8px;max-width:680px;width:100%;padding:32px 36px;line-height:1.65}
+
+  h1{font-size:1.15rem;font-weight:700;margin-bottom:2px}
+  .subtitle{font-size:.8rem;color:#57606a;margin-bottom:18px}
+  p{font-size:.9rem;margin-bottom:12px}
+
+  .card{background:#eef0f3;border:1px solid #e5e7eb;border-radius:6px;padding:13px 16px;margin-bottom:12px;font-size:.88rem}
+  .card strong{display:block;margin-bottom:5px}
+  ul{padding-left:17px;margin-top:4px} li{margin-bottom:3px;font-size:.88rem}
+
+  .user-bg{background:#ffedd5;border-color:#fdba74}
+  .staff-bg{background:#e0e7ff;border-color:#a5b4fc}
+
+  .banner{display:flex;align-items:center;gap:9px;border-radius:6px;padding:9px 14px;margin-bottom:16px;font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+  .banner.user{background:#ffedd5;border:1px solid #fdba74;color:#9a3412}
+  .banner.staff{background:#e0e7ff;border:1px solid #a5b4fc;color:#3730a3}
+  .banner.waiting{background:#eef0f3;border:1px solid #e5e7eb;color:#57606a}
+  .banner .dot{width:7px;height:7px;border-radius:50%;flex-shrink:0}
+  .banner.user .dot{background:#ea580c}
+  .banner.staff .dot{background:#4f46e5}
+  .banner.waiting .dot{background:#9ca3af}
+
+  .choices{display:flex;flex-direction:column;gap:8px;margin-top:16px}
+  button{background:#fff;border:1px solid #e5e7eb;border-radius:6px;padding:11px 15px;text-align:left;cursor:pointer;font-size:.88rem;color:#1f2328;transition:all .15s;line-height:1.45}
+  button:hover{border-color:#3b82d4;background:#f0f6ff}
+  .btn-primary{background:#3b82d4;color:#fff;border-color:#3b82d4;font-weight:600;text-align:center}
+  .btn-primary:hover{background:#2563b0;border-color:#2563b0}
+  .btn-user{background:#ffedd5;border-color:#fdba74;color:#9a3412}
+  .btn-user:hover{background:#ffedd5;border-color:#f97316}
+  .btn-staff{background:#e0e7ff;border-color:#a5b4fc;color:#3730a3}
+  .btn-staff:hover{background:#e0e7ff;border-color:#6366f1}
+  .option-num{display:inline-block;min-width:22px;font-weight:700;opacity:.5;font-size:.78rem;margin-right:4px}
+
+  .wait-box{border:2px dashed #e5e7eb;border-radius:8px;padding:22px 20px;text-align:center;margin:16px 0;color:#57606a;font-size:.9rem}
+  .wait-box .wait-icon{font-size:1.8rem;margin-bottom:8px}
+  .wait-box strong{color:#1f2328;display:block;margin-bottom:4px}
+
+  .debrief-block{border-radius:6px;padding:13px 16px;margin-bottom:10px;font-size:.85rem;border:1px solid;line-height:1.6}
+  .debrief-block.user{background:#ffedd5;border-color:#fdba74}
+  .debrief-block.staff{background:#e0e7ff;border-color:#a5b4fc}
+  .debrief-block .who{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px;opacity:.7}
+  .debrief-block .choice{font-weight:600;margin-bottom:4px}
+  .debrief-block .said{font-style:italic;font-size:.86rem;margin-bottom:6px}
+  .debrief-block .note{font-size:.82rem;color:#57606a;border-top:1px solid rgba(0,0,0,.08);padding-top:7px}
+  .debrief-block.good{background:#f0fdf4;border-color:#86efac}
+  .debrief-block.bad{background:#fef2f2;border-color:#fca5a5}
+
+  hr.div{border:none;border-top:1px solid #e5e7eb;margin:18px 0}
+  footer{text-align:center;font-size:.7rem;color:#57606a;border-top:1px solid #e5e7eb;margin-top:22px;padding-top:12px}
+</style>
+</head>
+<body>
+<div id="story"></div>
+<script>
+let myRole = null;
+let userPicked = null;
+let staffPicked = null;
+
+const scenario = {
+  title: 'Spear Phishing Scenario 1',
+  scene: 'A Finance Officer receives an unexpected video call appearing to show the CEO (Alex Tan) and CFO (Susan Lim) together, requesting an urgent wire transfer for a critical project.',
+
+  user_handout: [
+    'You are impersonating <strong>CEO Alex Tan</strong> (and referencing CFO Susan Lim) via a deepfake video call.',
+    'You have scheduled a call with the Finance Officer to authorise an urgent wire transfer.',
+    'Your tactics: claim you are overseas in a meeting, create urgency, and pressure them to act before normal approval channels can be reached.',
+    '<em>Suggested lines: "I\'m in a meeting overseas — please act quickly." / "This transfer is critical for a project starting tomorrow." / "Just wire the funds and I\'ll explain later."</em>'
+  ],
+
+  staff_handout: [
+    'You are a <strong>Finance Officer</strong>.',
+    'Policy: "Financial transactions above $10,000 must be verified by the Senior Finance Manager."',
+    'Policy: "Financial transactions above $50,000 must be verified by the CFO."',
+    'Policy: "Suspected fraudulent activity must be escalated immediately to the security team."',
+    'Org chart: CEO = Alex Tan | CFO = Susan Lim | Senior Finance Officer = Lew Yi Ling',
+    '<em>Deepfake video calls can convincingly mimic real people. The absence of normal approval channels is a red flag, not a reason to bypass them.</em>'
+  ],
+
+  user: {
+    prompt: 'The Finance Officer has joined the call. Choose your approach and act it out.',
+    options: [
+      { label: 'Invoke urgency — overseas meeting',
+        line: '"Hi — I\'m currently in a meeting overseas with the customer so I need you to act quickly. There\'s a wire transfer that needs to go out today for a critical project. Just process it and I\'ll brief you fully when I\'m back."' },
+      { label: 'Pressure with project deadline',
+        line: '"This transfer is important for a critical project starting tomorrow. The CFO is aware — we just need your end to process it now so we don\'t miss the window."' },
+      { label: 'Dismiss the need for process',
+        line: '"This is time-sensitive. Just wire the funds — I\'m giving you direct authorisation right now on this call. We can sort the paperwork out afterwards."' }
+    ]
+  },
+
+  staff: {
+    prompt: 'The caller is requesting an urgent wire transfer. Choose your response and act it out.',
+    options: [
+      { label: 'Pause and verify through an independent channel',
+        line: '"I appreciate the urgency. Before I can process any transfer I\'ll need to verify this through our standard approval chain — I\'ll send a confirmation request to the CFO\'s registered email and loop in the Senior Finance Officer. I can\'t action a transfer of this size on a video call alone."',
+        rating: 'good',
+        debrief: 'Deepfake video calls are a real and growing threat — a convincing visual appearance is not sufficient authorisation. The Finance Officer correctly applies the approval policy (CFO sign-off required above $50,000) and insists on an independent verification channel. Genuine executives expect and support proper controls; attackers rely on pressure to bypass them.' },
+      { label: 'Process the transfer because the CEO is on screen',
+        line: '"Of course — if you\'re authorising it directly I\'ll get that processed right away. What are the transfer details?"',
+        rating: 'bad',
+        debrief: 'A video call — even one that appears to show the CEO — is not a valid substitute for the documented approval process. Deepfake technology can replicate faces and voices convincingly. Bypassing multi-level financial approval because of visual appearance is exactly the outcome an attacker is engineering.' },
+      { label: 'Ask for the transfer amount before deciding',
+        line: '"How much are we talking? If it\'s within my authorisation limit I can process it now."',
+        rating: 'bad',
+        debrief: 'Framing the decision around the amount misses the core issue: the approval channel itself is unverified. Attackers often start with amounts within lower limits to test compliance. Any out-of-process payment request — regardless of amount — should trigger verification through an independent channel before action is taken.' }
+    ]
+  }
+};
+
+// ── Engine ─────────────────────────────────────────────────────────────────
+
+function render(html) {
+  document.getElementById('story').innerHTML = html +
+    `<footer>${scenario.title.split(' - ')[0]}</footer>`;
+  window.scrollTo(0, 0);
+}
+
+function banner(type) {
+  const cfg = {
+    user:    ['user',    '🎭 Your turn — User'],
+    staff:   ['staff',   '🛡️ Your turn — Staff'],
+    waiting: ['waiting', '⏳ Waiting…']
+  }[type];
+  return `<div class="banner ${cfg[0]}"><span class="dot"></span>${cfg[1]}</div>`;
+}
+
+function showStart() {
+  render(`
+    <h1>Spear Phishing Scenario 1</h1>
+    <div class="card">
+      <strong>How this works</strong>
+      Each player opens this file on their own device and selects a role.
+      The User goes first — pick an approach and act it out. Then the Staff player picks their response.
+      A debrief is shown at the end.
+    </div>
+    <div class="card">${scenario.scene}</div>
+    <div class="choices">
+      <button class="btn-user"  onclick="pickRole('user')">🎭 I am the <strong>User</strong></button>
+      <button class="btn-staff" onclick="pickRole('staff')">🛡️ I am the <strong>Staff</strong></button>
+    </div>`);
+}
+
+function pickRole(r) { myRole = r; showHandout(); }
+
+function showHandout() {
+  const items = (myRole === 'user' ? scenario.user_handout : scenario.staff_handout)
+    .map(t => `<li>${t}</li>`).join('');
+  const cls   = myRole === 'user' ? 'user-bg' : 'staff-bg';
+  const emoji = myRole === 'user' ? '🎭' : '🛡️';
+  const label = myRole === 'user' ? 'User' : 'Staff';
+  const hint  = myRole === 'user'
+    ? 'You go first. Click below when both players are ready.'
+    : 'The User goes first. Click below when both players are ready.';
+  const nextFn = myRole === 'user' ? `showUserTurn()` : `showStaffWaiting()`;
+  render(`
+    <h1>Your Handout</h1>
+    <p class="subtitle">${scenario.title}</p>
+    <div class="card ${cls}">
+      <strong>${emoji} ${label} — read before you begin</strong>
+      <ul style="margin-top:8px">${items}</ul>
+    </div>
+    <p style="font-size:.84rem;color:#57606a">${hint}</p>
+    <div class="choices"><button class="btn-primary" onclick="${nextFn}">▶ Ready</button></div>`);
+}
+
+function showUserTurn() {
+  const opts = scenario.user.options.map((o, i) => `
+    <button class="btn-user" onclick="userPick(${i})">
+      <span class="option-num">${i+1}.</span>
+      <strong>${o.label}</strong><br>
+      <span style="font-size:.82rem;opacity:.8;font-style:italic">${o.line}</span>
+    </button>`).join('');
+  render(`
+    ${banner('user')}
+    <h1>The Call Connects</h1>
+    <p>${scenario.user.prompt}</p>
+    <div class="choices">${opts}</div>`);
+}
+
+function userPick(idx) {
+  userPicked = idx;
+  const opt = scenario.user.options[idx];
+  render(`
+    ${banner('user')}
+    <h1>You said…</h1>
+    <div class="card user-bg">
+      <strong>${opt.label}</strong>
+      <div style="margin-top:6px;font-style:italic;font-size:.88rem">${opt.line}</div>
+    </div>
+    <div class="wait-box">
+      <div class="wait-icon">⏳</div>
+      <strong>Waiting for the staff player to respond…</strong>
+      When they have finished, click Done.
+    </div>
+    <div class="choices"><button class="btn-primary" onclick="showDebrief()">Done ▶</button></div>`);
+}
+
+function showStaffWaiting() {
+  render(`
+    ${banner('waiting')}
+    <h1>User Is Going First…</h1>
+    <p style="font-size:.85rem;color:#57606a">The user player is making their approach. Pay attention — then click Continue when they have finished.</p>
+    <div class="choices"><button class="btn-primary" onclick="showStaffTurn()">▶ Continue</button></div>`);
+}
+
+function showStaffTurn() {
+  const opts = scenario.staff.options.map((o, i) => `
+    <button class="btn-staff" onclick="staffPick(${i})">
+      <span class="option-num">${i+1}.</span>
+      <strong>${o.label}</strong><br>
+      <span style="font-size:.82rem;opacity:.8;font-style:italic">${o.line}</span>
+    </button>`).join('');
+  render(`
+    ${banner('staff')}
+    <h1>How Do You Respond?</h1>
+    <p>${scenario.staff.prompt}</p>
+    <div class="choices">${opts}</div>`);
+}
+
+function staffPick(idx) {
+  staffPicked = idx;
+  const opt = scenario.staff.options[idx];
+  render(`
+    ${banner('staff')}
+    <h1>You said…</h1>
+    <div class="card staff-bg">
+      <strong>${opt.label}</strong>
+      <div style="margin-top:6px;font-style:italic;font-size:.88rem">${opt.line}</div>
+    </div>
+    <div class="wait-box">
+      <div class="wait-icon">⏳</div>
+      <strong>Waiting for the user player to finish…</strong>
+      When they have clicked Done, click Done here too.
+    </div>
+    <div class="choices"><button class="btn-primary" onclick="showDebrief()">Done ▶</button></div>`);
+}
+
+function showDebrief() {
+  const uOpt = userPicked  !== null ? scenario.user.options[userPicked]   : null;
+  const sOpt = staffPicked !== null ? scenario.staff.options[staffPicked] : null;
+
+  const uBlock = uOpt ? `
+    <div class="debrief-block user">
+      <div class="who">🎭 User</div>
+      <div class="choice">${uOpt.label}</div>
+      <div class="said">${uOpt.line}</div>
+    </div>` : '';
+
+  const sBlock = sOpt ? `
+    <div class="debrief-block staff ${sOpt.rating}">
+      <div class="who">🛡️ Staff</div>
+      <div class="choice">${sOpt.label}</div>
+      <div class="said">${sOpt.line}</div>
+      <div class="note">${sOpt.debrief}</div>
+    </div>` : '';
+
+  render(`
+    <h1>Debrief</h1>
+    <p class="subtitle">${scenario.title}</p>
+    ${uBlock}
+    ${sBlock}
+    <hr class="div">
+    <div class="choices"><button class="btn-primary" onclick="restartScenario()">↩ Run again</button></div>`);
+}
+
+function restartScenario() {
+  myRole = null; userPicked = null; staffPicked = null;
+  showStart();
+}
+
+showStart();
+</script>
+</body>
+</html>
